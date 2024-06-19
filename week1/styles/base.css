@@ -1,0 +1,118 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+header {
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    border: 1px solid(0, 0, 0, 0.1);
+}
+
+header,
+main,
+nav,
+footer {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 100;
+    font-size: 2rem
+}
+
+nav {
+    background-color: #92a8d1;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 150px auto,
+}
+
+nav a {
+    color: #034f84;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+nav a:hover {
+    border: 3px solid #f7786b;
+    color: #f7cac9;
+}
+
+.active {
+    color: #f7cac9;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    ;
+    gap: 20px;
+    text-align: center;
+    background-color: antiquewhite;
+    border: 2 px solid #034f84;
+}
+
+.main-grid h2 {
+    margin-bottom: 10px;
+    background-color: #f7786b;
+}
+
+.about-me {
+    display: grid;
+}
+.about-me-grid,
+.utah-grid {
+    display: flex;
+    grid-template-columns: 2fr 1 fr;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-me-grid p {
+    text-align: center;
+}
+
+.about-me-grid img,
+.utah-grid img {
+    width: 150px;
+    margin-left: 20px;
+}
+
+.card ul {
+    text-align: left;
+}
+
+footer {
+    background-color: #92a8d1;
+    text-align: center;
+}
+
+/*Larger Views ******************/
+/* Use a media query to
+at 800px: */
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        /*justify-content:space-evenly; 
+      using flex below instead*/
+    }
+
+    nav ul li {
+        flex: 1 1 100%;
+    }
+}
