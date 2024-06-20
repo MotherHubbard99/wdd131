@@ -38,8 +38,8 @@ nav a {
 
 .nav-grid {
     text-transform: uppercase;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    display: flex;
+    justify-content: center;
 }
 
 nav a:hover {
@@ -107,7 +107,7 @@ footer {
 /* Use a media query to
 at 800px: */
 @media (min-width: 640px) {
-    nav ul {
+    nav {
         display: flex;
         /*justify-content:space-evenly; 
       using flex below instead*/
