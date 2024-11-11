@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  grid-template: auto 1fr auto / 300px 1fr;
+  font-size: large;
+}
+
+/*mobile*****/
+header {
+  background: #eca1a6;
+  grid-column: 1 / 4;
+}
+
+nav {
+  background-color: #d6cbd3;
+  grid-column: 1 / 4;
+  padding: 2rem;
+  font-size: x-large;
+}
+
+.nav-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav a {
+
+  color: #034f84;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: overline;
+  color: #ada397;
+}
+
+.active {
+  color: #bdcebe;
+}
+
+main {
+  padding: 2rem;
+  background: #eca1a6;
+  grid-column: 1 / 4;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  text-align: center;
+  background-color: #d6cbd3;
+}
+
+.about-me {
+  display: grid;
+}
+
+.about-me-grid,
+.utah-grid {
+  display: flex;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #eca1a6;
+  border-radius: 30px;
+  padding: 20px;
+}
+
+.about-me-grid p {
+  text-align: center;
+}
+
+.about-me-grid img,
+.utah-grid img {
+  width: 150px;
+  margin-left: 20px;
+  border-radius: 30px;
+}
+
+.card {
+  padding: 2rem;
+  background: #bdcebe;
+  grid-column: 2 / 4;
+}
+
+.main-grid h2 {
+  padding: 20px;
+  background-color: #ada397;
+  border-radius: 15px;
+  /* Curves the corners */
+  display: inline-block;
+  /* Makes the background wrap the content */
+
+}
+
+footer {
+  background: #ada397;
+  padding: 2rem;
+  text-align: center;
+  grid-column: 1 / 4;
+  font-size: medium;
+}
