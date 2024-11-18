@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    /* <uniquifier>: Use a unique and descriptive class name
+    <weight>: Use a value from 200 to 1000 */
+    .mulish {
+        font-family: "Mulish", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+}
+
+header {
+    background-color: #f1e3dd;
+    display: grid;
+    /* align-items: center;
+    justify-content: center; */
+    grid: gap 1px;
+    padding: 20px;
+    border: 1px, solid black;
+}
+
+header,
+main h1 {
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+h1 {
+    color: #8d9db6;
+    text-shadow: 2px 2px 0px #667292;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: #8d9db6;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation {
+    /* Hide the menu by default */
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navigation.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 3px solid white;
+}
+
+.active {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+}
+
+/* Container for the flex items (figures) */
+.temples {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows the items to wrap to the next line when needed */
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Each figure inside the flex container */
+.temples figure {
+    width: 250px;
+    /* Set a fixed width for each figure */
+    text-align: center;
+    margin: 0;
+}
+
+.temples img {
+    width: 100%;
+    height: auto;
+    /* Maintains the image ratio */
+    border-radius: 8px;
+}
+
+.temples figcaption {
+    margin-top: 10px;
+    /* Adds space between the image and caption */
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    background-color: #8d9db6;
+    padding: 10px;
+}
+
+.footer-grid {
+    text-align: center;
+    color: #f1e3dd;
+}
