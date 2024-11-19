@@ -17,7 +17,7 @@ header {
     display: grid;
     /* align-items: center;
     justify-content: center; */
-    grid: 1px;
+    grid-template-columns: 1px;
     padding: 20px;
     border: 1px solid black;
 }
