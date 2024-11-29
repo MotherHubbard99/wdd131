@@ -35,14 +35,13 @@ h1 {
 
 /* small view navigation */
 #menu {
+    display: block;
     font-size: 1.5rem;
     border: 0;
+    text-decoration: none;
+    padding: .5rem .75rem;
     background: #8d9db6;
     color: #000;
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    cursor: pointer;
 }
 
 #menu::before {
@@ -53,39 +52,57 @@ h1 {
     content: "❎";
 }
 
-.navigation {
-    /* Hide the menu by default */
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.navigation.open {
-    display: block;
-}
-
 nav ul {
     list-style: none;
     display: flex;
     flex-direction: column;
 }
 
+.navigation {
+    /* Hide the menu by default */
+    display: none;
+    max-width: 650px;
+    list-style: none;
+
+}
+
+.navigation.open {
+    display: block;
+}
+
+/* nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+} */
+
+.navigation li {
+    display: none;
+}
+
 nav a {
     display: block;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 1rem;
     text-decoration: none;
 }
 
-nav a:hover {
-    border: 3px solid white;
-}
-
-.active {
+.navigation a:hover,
+.navigation a:active {
     color: black;
     text-shadow: 1px 1px 1px white;
+    background-color: #8d9db6;
+    border: 3px solid blue;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    /* change the hamburger lines to an X */
+    content: 'X';
 }
 
 /* Container for the flex items (figures) */

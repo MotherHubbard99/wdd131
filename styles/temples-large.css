@@ -6,22 +6,17 @@
         display: none;
     }
 
-    .navigation
-    header {
+    .navigation {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
     }
 
-    nav ul {
-        /* display: flex; */
-        /* justify-content: space-evenly; */
-        justify-content: flex-end;
-        flex-direction: row;
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
     }
 
     nav a {
-        flex: 1 1 100%;
+        text-align: center;
     }
 
     #temples {

@@ -1,0 +1,83 @@
+body {
+    .outfit {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    h1 {
+        background-color: #87bdd8;
+        color: #f1e3dd;
+        text-size-adjust: auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    main {
+        background-color: #b7d7e8;
+        color: black;
+    }
+
+    .hero picture {
+        width: 250px;
+        /* Set a fixed width for each figure */
+        text-align: center;
+        margin: 0;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        /* Maintains the image ratio */
+        border-top: 5vh solid #f1e3dd;
+        border-bottom: 1vh solid #87bdd8;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    #weather,
+    #data {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    h1,
+    h2 {
+        font-size: 5vw;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .info h3 {
+        grid-column: 1;
+        justify-self: right;
+        margin: 5px;
+    }
+
+    .info p {
+        grid-column: 2;
+        margin: 5px;
+        justify-self: left;
+    }
+
+    #weather img {
+        width: 3rem;
+        align-self: center;
+    }
+
+    footer {
+        text-align: center;
+        background-color: #87bdd8;
+    }
+
+}

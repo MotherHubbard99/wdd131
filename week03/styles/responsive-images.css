@@ -1,0 +1,12 @@
+body {
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}

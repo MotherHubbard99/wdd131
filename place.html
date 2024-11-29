@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Angela Hubbard" />
+    <meta name="description" content="All about my vacation to Kauai"/>
+    <title>Kauai, Hawaii</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+</head>
+<body>
+    <header> 
+        <h1>Kauai, Hawaii</h1>
+    </header>
+    <main>
+        <div class='hero'>
+            <picture>
+                <source srcset='images/widescreen.webp' media='(min-width: 700px)'>
+                <img src='images/mobile_HI.webp' alt='Kauai, Hawaii' width='500' height='250'>
+            </picture>   
+        </div>
+        <section id='data'>
+            <h2>Data</h2>
+            <div class='info' id="data_info">
+                <h3>Area:</h3> 
+                <p>562.3 square miles </p>
+                <h3>Population:</h3> <p>73,298 (2020)</p>
+                <h3>Capital:</h3> <p>Lihue</p>
+                <h3>Languages:</h3> <p>English and Hawaiian</p>
+                <h3>Currency:</h3> <p>US Dollar</p>
+                <h3>Time Zone:</h3> <p>Hawaii-Aleutian Standard Time</p>
+                <h3>Calling Code:</h3> 
+                <p>808</p>
+            </div>
+        </section>
+        <section id='weather'>
+            <h2>Weather</h2>
+            <icon>
+                <source srcset='images/sunny.webp' media='(min-width: 700x)'>
+                <img src='images/sunrise_icon.svg' alt='Sunny Weather in the forecast for today.'>;
+            </icon>
+            <div class='info' id="data_info">
+                <h3>Temperature (F):</h3> 
+                <p id='temp'>74</p>
+                <h3>Conditions:</h3> 
+                <p>Sunny</p>
+                <h3>Wind (mph):</h3> 
+                <p id='wind'>6</p>
+                <h3>Wind Chill (F):</h3> 
+                <p id='windChill'></p>
+            </div>       
+        </section>
+    </main>
+    <footer>
+        <div class='footer-grid'>
+            <p>&copy; <span id="current-year"></span> Angela Hubbard USA</p>
+            <p>Last Modification: <span id="last-modified"></span>
+            </p>
+        </div> 
+    </footer>
+</body>
+</html>
