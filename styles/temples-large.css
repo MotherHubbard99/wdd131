@@ -1,22 +1,43 @@
 /* Larger Views */
 @media screen and (min-width: 640px) {
 
-    /* Don't display the hamburger icon */
-    #menu {
-        display: none;
-    }
 
     .navigation {
-        display: flex;
-    }
-
-    .navigation li {
         display: block;
-        flex: 1 1 100%;
+    }
+    nav {
+        background-color: black;
+        margin: 0 auto;
+        max-width: 1000px;
     }
 
     nav a {
+        display: block;
+        color: #f1e3dd;
         text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+        font-size: x-large;
+
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        /* Use flexbox for horizontal alignment */
+        justify-content: space-around;
+        /* Distribute items evenly */
+    }
+
+    nav a:hover {
+        border: 1px solid #f1e3dd;
+        background-color: #f1e3dd;
+        color: #000;
+    }
+
+    #menu {
+        display: none;
+        /* hide hamburger button */
     }
 
     #temples {

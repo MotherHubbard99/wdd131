@@ -13,11 +13,9 @@ document.getElementById('last-modified').textContent = lastModified;
 
 //hamburger menu
 const hamButton = document.querySelector('#menu');
-const mainnav = document.querySelector('.navigation');
+const navigation = document.querySelector('.navigation');
 
 hamButton.addEventListener('click', () => {
-    //Toggle the open class to show/hide nav menu
-    mainnav.classList.toggle('show');
-    //toggle the open class on the ham menu to change the icon
-    hamButton.classList.toggle('show');
+    navigation.classList.toggle('open');
+    hamButton.classList.toggle('open');
 });
