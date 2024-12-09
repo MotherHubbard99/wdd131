@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+header {
+    background-color: #f1e3dd;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+header,
+main h1 {
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+h1 {
+    color: #8d9db6;
+    text-shadow: 2px 2px 0px #667292;
+    text-align: center;
+}
+
+.navigation {
+    display: none;
+    flex-direction: column;
+    background-color: #8d9db6;
+    color: white;
+}
+
+.navigation.open {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    top: 1rem;
+    right: 2rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation a {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    background-color: #8d9db6;
+    border: 3px solid black;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+/* Container for the flex items (figures) */
+.temples-grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows the items to wrap to the next line when needed */
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+}
+
+.temples-grid img {
+    /*display all images in the same size*/
+    width: 250px;
+    height: 250px;
+    /*keeps aspect ration and fills the space*/
+    object-fit: cover;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.temple.templeName {
+    margin-top: 10px;
+    /* Adds space between the image and caption */
+    font-size: 1rem;
+    color: #333;
+}
+
+footer {
+    background-color: #8d9db6;
+    padding: 10px;
+}
+
+.footer-grid {
+    text-align: center;
+    color: #f1e3dd;
+}
