@@ -101,8 +101,19 @@ const temples = [
     },
 
 ];
+/*
+// Check if the home link is initially active and show all temples
+if (homeLink.classList.contains("active")) {
+    // Show all temples 
+    createTempleCard(temples);
+}
 
-createTempleCard(temples);
+const homeLink = document.querySelector("#home");
+//use an arrow function
+homeLink.addEventListener("click", () => {
+    //show all temples
+    createTempleCard(temples)
+}); */
 
 const nonUtahLink = document.querySelector("#nonUtah");
 //use an arrow function
@@ -128,6 +139,8 @@ smallLink.addEventListener("click", () => {
     //create an array of temple areas of 20,000 sq ft or less
     createTempleCard(temples.filter(temple => temple.area <= 20000));
 });
+
+createTempleCard(temples);
 
 function createTempleCard(filteredTemples) {
     //clear the previous filter
