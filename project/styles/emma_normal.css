@@ -97,19 +97,10 @@ body {
         font-weight: 600;
     }
 
-    .info p {
+    .info p, .footer-grid {
         font-family: "Outfit", serif;
         font-optical-sizing: auto;
         font-style: normal;
-    }
-
-    #Welcome {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: black;
-        font-size: 5vw;
     }
 
     footer {
