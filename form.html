@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="Forms Assignment" content="How to create a Form">
+<meta name="author" content="Angela Hubbard">
+<script src="scripts/form.js" defer></script>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+</style>
+
+<title>Forms</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="styles/form.css" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ <h1>Product Review</h1>
+    </header>
+    
+<!-- CONTENT HERE -->
+<main>
+    <form method="get" action="review.html" class-"wf1">
+        <fieldset>
+            <div class="product"></div> 
+            <div class="productContainer">
+                <label for="productSelect">Product Name*</label>
+                <select id="productSelect" name="product" required>
+                    <option value="">Choose a Product... &#9662;</option>
+                </select>
+            </div>
+
+        <div class="rating"></div>
+            <label>Overall Rating*</label>
+            <div class="radioContainer">
+                <label class="radioLabel"> <span class="stars">&#9733</span> <div> <input type="radio" name="rating" value="1" required> </div> </label> 
+                <label class="radioLabel"> <span class="stars">&#9733&#9733</span> <div> <input type="radio" name="rating" value="2"> </div> </label> 
+                <label class="radioLabel"> <span class="stars">&#9733&#9733&#9733</span> <div> <input type="radio" name="rating" value="3"> </div> </label> 
+                <label class="radioLabel"> <span class="stars">&#9733&#9733&#9733&#9733</span> <div> <input type="radio" name="rating" value="4"> </div> </label>
+                <label class="radioLabel"> <span class="stars">&#9733&#9733&#9733&#9733&#9733</span> <div> <input type="radio" name="rating" value="5"> </div> </label>
+            </div>
+        </div>
+            
+            <label for="date">Date of Installation*</label> 
+            <div class="dateContainer"> <input type="date" id="date" name="date" required> </div>
+
+            <div class="features"></div>
+            <label>Which features did you find useful in the product? <i>(Check all that apply)*</i></label>
+            <div class="featuresContainer">
+                <label><input type="checkbox" name="features" value="durabilty">Durability</label>
+                <label><input type="checkbox" name="features" value="ease">Ease of Use</label>
+                <label><input type="checkbox" name="features" value="performance">Performance</label>
+                <label><input type="checkbox" name="features" value="design">Design</label>
+            </div> 
+            <p>
+            <label for="review">Written Review <i>(optional)</i></label> 
+            <div class="reviewContainer"> <textarea id="review" name="review" rows="3"></textarea> </div>
+
+            <label for="name">Your Name <i>(optional)</i></label>
+            <div class="nameContainer">
+                <input id="name" type="text" name="name">
+            </div>
+        
+           <button type="submit" class="submitButton">Post Review</button>
+        </fieldset>
+    </form>
+    </main>
+    
+    <footer>
+        <div class='footer-grid'>
+            <p>&copy; <span id="current-year"></span> Angela Hubbard USA</p>
+            <p>Last Modification: <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
