@@ -11,11 +11,11 @@
 
     #menu {
         display: none;
-        font-size: 2vw;
     }
 
     .navigation {
         display: flex;
+        justify-content: center;
     }
 
     nav {
@@ -40,15 +40,11 @@
         /* Use flexbox for horizontal alignment */
         justify-content: space-around;
         /* Distribute items evenly */
+
     }
 
     main {
         position: relative;
-    }
-
-    #Welcome {
-        top: 50%;
-        left: 50%;
     }
 
     /*About Emma*/
