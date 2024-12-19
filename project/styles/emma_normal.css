@@ -5,142 +5,141 @@ body {
     font-size: 5vw;
 }
 
-    header h1 {
-        background-color: white;
-        border: 3px solid black;
-        border-radius: 2em;
-        color: #3366ff;
-        text-size-adjust: auto;
-        padding: 2px;
-        text-align: center;
-        font-weight: 900;
+header h1 {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 2em;
+    color: #3366ff;
+    text-size-adjust: auto;
+    padding: 2px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 5vw;
+}
+
+/*smaller views hamburger button*/
+@media (max-width: 640px) {
+    .navigation {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        color: antiquewhite;
+        font-weight: 600;
+    }
+
+    .navigation.open {
+        display: block;
+    }
+
+    .navigation ul {
+        list-style: none;
+    }
+
+    /* small view navigation */
+    #menu {
         font-size: 5vw;
+        border: 0;
+        background: none;
+        color: #000;
+        top: 1rem;
+        right: 2rem;
+        display: block;
     }
 
-    /*smaller views hamburger button*/
-    @media (max-width: 640px) {
-        .navigation {
-            display: none;
-            flex-direction: column;
-            background-color: black;
-            color: antiquewhite;
-            font-weight: 600;
-        }
-
-        .navigation.open {
-            display: block;
-        }
-
-        .navigation ul {
-            list-style: none;
-        }
-
-        /* small view navigation */
-        #menu {
-            font-size: 5vw;
-            border: 0;
-            background: none;
-            color: #000;
-            top: 1rem;
-            right: 2rem;
-            display: block;
-        }
-
-        #menu::before {
-            content: "☰";
-        }
-
-        #menu.open::before {
-            content: "❎";
-        }
-
-        /* when the button is clicked - the open class is toggled (added/removed) */
-        .open a {
-            display: block;
-        }
+    #menu::before {
+        content: "☰";
     }
 
-    .navigation a {
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-        text-decoration: none;
+    #menu.open::before {
+        content: "❎";
     }
 
-    .navigation a:hover,
-    .navigation a:active {
-        color: black;
-        text-shadow: 1px 1px 1px white;
-        background-color: #99b3ff;
-        border: 3px solid black;
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
     }
+}
 
-    main {
-        background-color: white;
-        color: black;
-        position: relative;
-        text-align: center
-    }
+.navigation a {
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
 
-    h3 {
-        margin-bottom: 0;
-    }
+.navigation a:hover,
+.navigation a:active {
+    color: black;
+    text-shadow: 1px 1px 1px white;
+    background-color: #99b3ff;
+    border: 3px solid black;
+}
 
-    ul {
-        margin-top: 0;
-        justify-items: center;
-        font-family: "Outfit", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
+main {
+    background-color: white;
+    color: black;
+    position: relative;
+    text-align: center
+}
 
-    .hero picture {
-        width: 250px;
-        /* Set a fixed width for each figure */
-        text-align: center;
-        margin: 0;
-        position: relative;
-    }
+h3 {
+    margin-bottom: 0;
+}
 
-    .hero img {
-        width: 100%;
-        height: auto;
-        /* Maintains the image ratio */
-        border-top: 1vh solid black;
-        border-bottom: 1vh solid black;
-    }
+ul {
+    margin-top: 0;
+    justify-items: center;
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
 
-    h2 {
-        text-align: center;
-        font-weight: 900;
-        color: #3366ff;
-    }
+.hero picture {
+    width: 250px;
+    /* Set a fixed width for each figure */
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
 
-    h3 {
-        color: #3366ff;
-    }
+.hero img {
+    width: 100%;
+    height: auto;
+    /* Maintains the image ratio */
+    border-top: 1vh solid black;
+    border-bottom: 1vh solid black;
+}
 
-    .info p,
-    .footer-grid,
-    .contact {
-        font-family: "Outfit", serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-    }
+h2 {
+    text-align: center;
+    font-weight: 900;
+    color: #3366ff;
+}
 
-    footer {
-        text-align: center;
-        background-color: #3366ff;
-    }
+h3 {
+    color: #3366ff;
+}
 
-    footer a {
-        color: #faebd7;
-        font-weight: 500;
-    }
+.info p,
+.footer-grid,
+.contact {
+    font-family: "Outfit", serif;
+    font-style: normal;
+}
 
-    /*About Emma, Contact Us*/
-    .emmaImage img {
-        border-color: #000;
-        border-style: groove;
-        border-radius: 60px;
-    }
+footer {
+    text-align: center;
+    background-color: #3366ff;
+}
+
+footer a {
+    color: #faebd7;
+    font-weight: 500;
+}
+
+/*About Emma, Contact Us*/
+.emmaImage img {
+    border-color: #000;
+    border-style: groove;
+    border-radius: 60px;
+}
