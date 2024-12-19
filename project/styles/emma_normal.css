@@ -10,11 +10,9 @@ header h1 {
     border: 3px solid black;
     border-radius: 2em;
     color: #3366ff;
-    text-size-adjust: auto;
     padding: 2px;
     text-align: center;
     font-weight: 900;
-    font-size: 5vw;
 }
 
 /*smaller views hamburger button*/
@@ -90,7 +88,6 @@ ul {
     margin-top: 0;
     justify-items: center;
     font-family: "Outfit", serif;
-    font-optical-sizing: auto;
     font-style: normal;
 }
 

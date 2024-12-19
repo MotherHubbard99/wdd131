@@ -6,7 +6,7 @@
     }
 
     header h1 {
-        font-size: 2vw;
+        font-size: 5vw;
     }
 
     #menu {
@@ -16,6 +16,7 @@
     .navigation {
         display: flex;
         justify-content: center;
+        margin-bottom: 10px;
     }
 
     nav {
@@ -40,6 +41,7 @@
         /* Use flexbox for horizontal alignment */
         justify-content: space-around;
         /* Distribute items evenly */
+        margin-bottom: 1px;
 
     }
 
