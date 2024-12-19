@@ -3,6 +3,7 @@ body {
     font-weight: 400;
     font-style: normal;
     font-size: 5vw;
+}
 
     header h1 {
         background-color: white;
@@ -30,7 +31,7 @@ body {
             display: block;
         }
 
-        nav ul {
+        .navigation ul {
             list-style: none;
         }
 
@@ -143,5 +144,3 @@ body {
         border-style: groove;
         border-radius: 60px;
     }
-
-}
