@@ -42,4 +42,14 @@
         left: 50%;
     }
 
+    /*About Emma*/
+    #aboutDiv {
+        max-width: fit-content;
+    }
+
+    .contact {
+        text-align: center;
+        max-width: fit-content;
+    }
+
 }

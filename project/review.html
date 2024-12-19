@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Service Survey for Emma's Housekeeping">
+<meta name="author" content="Angela Hubbard">
+<script src="scripts/review.js" defer></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+<title>Service Review Form</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- STYLE SHEETS -->
+<link href="styles/review.css" rel="stylesheet">
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ <h1>Service Review</h1>
+    </header>
+    
+<!-- CONTENT HERE -->
+<main>
+    <form method="get" action="confirm.html" class="wf1">
+        <fieldset>
+            <div class="county"></div> 
+            <div class="countyContainer">
+                <label for="countySelect">County Name*</label>
+                <select id="countySelect" name="county" required>
+                    <option value="">Choose a County... &#9662;</option>
+                </select>
+            </div>
+
+        <div class="rating"></div>
+            <label>Overall Rating *</label>
+            <div class="radioContainer">
+                <label class="radioLabel"> <span class="stars">&#9733;</span> 
+                    <input type="radio" name="rating" value="1" required></label> 
+                <label class="radioLabel"> <span class="stars">&#9733;&#9733;</span> <input type="radio" name="rating" value="2"></label> 
+                <label class="radioLabel"> <span class="stars">&#9733;&#9733;&#9733;</span><input type="radio" name="rating" value="3"></label> 
+                <label class="radioLabel"> <span class="stars">&#9733;&#9733;&#9733;&#9733;</span><input type="radio" name="rating" value="4"></label>
+                <label class="radioLabel"> <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span><input type="radio" name="rating" value="5"></label>
+        </div>
+            
+            <label for="date">Service Date *</label> 
+            <div class="dateContainer"> <input type="date" id="date" name="date" required> </div>
+
+            <div class="features"></div>
+            <label>What service(s) was performed? <i>(mark all that apply) </i>*</label>
+            <div class="featuresContainer">
+                <label><input type="checkbox" name="features" value="floors">Floors</label>
+                <label><input type="checkbox" name="features" value="bedroom">Bedroom(s)</label>
+                <label><input type="checkbox" name="features" value="kitchen">Kitchen</label>
+                <label><input type="checkbox" name="features" value="bathroom">Bathroom(s)</label>
+                <label><input type="checkbox" name="features" value="deepClean">Deep Cleaning</label>
+                <label><input type="checkbox" name="features" value="other">Other item (not listed)</label>
+            </div> 
+            <p>
+            <label for="review">Written Review <i>(optional)</i></label> 
+            <div class="reviewContainer"> <textarea id="review" name="review" rows="3"></textarea> </div>
+
+            <label for="name">Your Name <i>(optional)</i></label>
+            <div class="nameContainer">
+                <input id="name" type="text" name="name">
+            </div>
+        
+           <button type="submit" class="submitButton">Post Review</button>
+        </fieldset>
+    </form>
+    </main>
+    
+    <footer>
+        <div class='footer-grid'>
+            <p>&copy; <span id="current-year"></span> Angela Hubbard USA</p>
+            <p>Last Modification: <span id="last-modified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

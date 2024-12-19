@@ -5,21 +5,21 @@ body {
 
     header h1 {
         background-color: white;
+        border: 3px solid black;
+        border-radius: 2em;
         color: #3366ff;
         text-size-adjust: auto;
         padding: 3px;
         text-align: center;
         font-weight: 900;
         font-size: 7vw;
-        border: 3px solid black;
-        border-radius: 2em;
     }
 
     .navigation {
         display: none;
         flex-direction: column;
         background-color: black;
-        color: white;
+        color: antiquewhite;
         font-weight: 600;
     }
 
@@ -74,6 +74,14 @@ body {
         background-color: white;
         color: black;
         position: relative;
+        text-align: center
+    }
+
+    ul {
+        justify-items: center;
+        font-family: "Outfit", serif;
+        font-optical-sizing: auto;
+        font-style: normal;
     }
 
     .hero picture {
@@ -94,10 +102,17 @@ body {
 
     h2 {
         text-align: center;
-        font-weight: 600;
+        font-weight: 900;
+        color: #3366ff;
     }
 
-    .info p, .footer-grid {
+    h3 {
+        color: #3366ff;
+    }
+
+    .info p,
+    .footer-grid,
+    .contact {
         font-family: "Outfit", serif;
         font-optical-sizing: auto;
         font-style: normal;
@@ -106,6 +121,40 @@ body {
     footer {
         text-align: center;
         background-color: #3366ff;
+    }
+
+    footer a {
+        color: #faebd7;
+        font-weight: 500;
+    }
+
+    /*About Emma, Contact Us*/
+    .emmaImage img {
+        border-color: #000;
+        border-style: groove;
+        border-radius: 60px;
+    }
+
+    #aboutDiv,
+    .contact {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .emmaImage,
+    .broom {
+        flex: 1;
+        margin-right: 20px;
+    }
+
+    .aboutEmma,
+    .telAndEmail {
+        flex: 2;
+    }
+
+    .telAndEmail p {
+        font-size: 20px;
     }
 
 }
